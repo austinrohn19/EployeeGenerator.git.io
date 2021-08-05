@@ -10,7 +10,7 @@ const createTeam = team =>{
         <h2 class="card-title">${manager.getName()}</h2>
         <h3 class="card-title">${manager.getRole()}</h3>
         <div class="card-id">ID: ${manager.getId()}</div>
-        <a class="card-email" href = "mailto${manager.getEmail()}"><span style="color:black">Email: </span>${manager.getEmail()}</a>
+        <div class="card-email"><a href = "mailto${manager.getEmail()}"><span style="color:black">Email: </span>${manager.getEmail()}</a></div>
         <div class="card-officenumber">Ofiice Number: ${manager.getofficeNumber()}</div>
         </div>
         </div>`
@@ -22,8 +22,8 @@ const createTeam = team =>{
         <h2 class="card-title">${engineer.getName()}</h2>
         <h3 class="card-title">${engineer.getRole()}</h3>
         <div class="card-id">ID: ${engineer.getId()}</div>
-        <a class="card-email" href = "mailto:${engineer.getEmail()}"><span style="color:black">Email: </span>${engineer.getEmail()}</a>
-        <a class="card-github" href = "http://github.com/${engineer.getGitHub()}" target="_blank"> ${engineer.getGitHub()}</a>
+        <div class="card-email"><a href = "mailto:${engineer.getEmail()}"><span style="color:black">Email: </span>${engineer.getEmail()}</a></div>
+        <div class="card-github"><a href = "http://github.com/${engineer.getGitHub()}" target="_blank"> <span style="color:black">GitHub: </span>${engineer.getGitHub()}</a></div>
         </div>
         </div>`
     }
@@ -33,8 +33,8 @@ const createTeam = team =>{
         <div class="card-header">
         <h2 class="card-title">${intern.getName()}</h2>
         <h3 class="card-title">${intern.getRole()}</h3>
-        <div class="car-id">ID: ${intern.getId()}</div>
-        <a class="card-email" href = "mailto:${intern.getEmail()}"><span style="color:black">Email: </span>${intern.getEmail()}</a>
+        <div class="card-id">ID: ${intern.getId()}</div>
+        <div class="card-email"><a href = "mailto:${intern.getEmail()}"><span style="color:black">Email: </span>${intern.getEmail()}</a></div>
         <div class="card-school">School: ${intern.getSchool()}</div>
         </div>
         </div>`
@@ -69,9 +69,7 @@ module.exports = team => {
 <body>
 <div class= "header">My Team</div>
 <div class="container">
-<div class="row">
 <div class="card-team">${createTeam(team)}</div>
-</div>
 </div>
 </body>
 </html>

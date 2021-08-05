@@ -1,13 +1,9 @@
 *{ 
-    box-sizing: border-box;
-}
-
-.row {
-  margin: 0 -5px;
+  box-sizing: border-box;
 }
 
 .header {
-padding: 75px;
+padding: 10px;
 width: 100%;
 background-color: teal;
 color: black;
@@ -19,6 +15,7 @@ text-align: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 
@@ -27,8 +24,7 @@ text-align: center;
   border-radius: 15px;
   width: 260px;
   height: 300px;
-  margin-top: 100px;
-  margin-left: 100px;
+  margin: 50px;
   display: inline-block;
   background-color: lightgrey;
 }
@@ -48,10 +44,11 @@ text-align: center;
   width: 240px;
   height: 30px;
   background-color: white;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 30px;
   margin-left: 8px;
   text-align: left;
+  
 }
 
 .card-email {
@@ -63,7 +60,7 @@ text-align: center;
   margin-bottom: 30px;
   margin-left: 8px;
   text-align: left;
-  
+
 }
 
 .card-officenumber {
@@ -74,6 +71,7 @@ text-align: center;
   margin-bottom: 30px;
   margin-left: 8px;
   text-align: left;
+  
 }
 
 .card-github {
@@ -84,6 +82,7 @@ text-align: center;
   margin-bottom: 30px;
   margin-left: 8px;
   text-align: left;
+  
 }
 
 .card-school {
@@ -94,6 +93,7 @@ text-align: center;
   margin-bottom: 30px;
   margin-left: 8px;
   text-align: left;
+ 
 }
 
  
