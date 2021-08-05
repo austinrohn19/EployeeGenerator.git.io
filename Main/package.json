@@ -1,0 +1,19 @@
+{
+  "name": "employeemanagement",
+  "version": "1.0.0",
+  "description": "employee managerment application",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^8.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm run jest"
+  },
+  "author": "Austin Rohn",
+  "license": "ISC"
+}
