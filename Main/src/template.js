@@ -10,7 +10,7 @@ const createTeam = team =>{
         <h2 class="card-title">${manager.getName()}</h2>
         <h3 class="card-title">${manager.getRole()}</h3>
         <div class="card-id">ID: ${manager.getId()}</div>
-        <div class="card-email"><a href = "mailto${manager.getEmail()}"><span style="color:black">Email: </span>${manager.getEmail()}</a></div>
+        <div class="card-email"><a href = "mailto:${manager.getEmail()}"><span style="color:black">Email: </span>${manager.getEmail()}</a></div>
         <div class="card-officenumber">Ofiice Number: ${manager.getofficeNumber()}</div>
         </div>
         </div>`
